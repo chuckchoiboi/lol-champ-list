@@ -1,0 +1,93 @@
+body {
+    width: 1100px;
+    margin: auto;
+    background: url('https://waifu.clan.su/_ld/4/66699361.jpg');
+    background-size: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+section {
+    padding: 5px;
+}
+
+span {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+}
+
+div {
+    text-align: left;
+}
+
+.hover {
+    opacity: .5;
+}
+
+#filter-sidebar{
+    float: left;
+    width: 200px;
+    height: 470px;
+    display: block;
+}
+
+#champ-gallery {
+    display: inline-block;
+    margin-left: 220px;
+    float: left;
+    width: 600px;
+    height: 900px;
+}
+
+#champ-preview {
+    float: left;
+    width: 200px;
+    height: 470px;
+    display: block;
+    margin-left: 830px;
+}
+
+#filter-sidebar, #champ-preview {
+    position: fixed;
+    border: 5px solid black;
+    text-align: center;
+    background: rgba(255,255,255,0.5)
+}
+
+/* rating scale */
+            .rating {
+            margin-top: 5%;
+            border: 1px #999 solid;
+            display: none;
+            font-size:0;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row-reverse;
+            background: linear-gradient(to right, #0f0, #ff0, #f00 )
+        }
+        .rating input {
+            display: none
+        }
+        .rating label {
+            display: flex;
+            width: 100px;
+            height: 20px;
+            font-size: 16px;
+            justify-content: center;
+            align-items: center;
+            background: #fff;
+            color: #000;
+          cursor: pointer;
+        }
+        .rating label {
+            border-left: 1px #999 solid;
+            transition: .3s;
+        }
+
+        /* selects all elements preceded by the checked label*/
+        .rating .checked~label{
+            background: none;
+            color: #fff;
+        }

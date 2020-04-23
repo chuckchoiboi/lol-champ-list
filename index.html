@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>League Champ Picker</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1>Pick your champion!</h1>
+
+    <section id="filter-sidebar">
+        <span>What should we play today?</span>
+        <div id="champ-type">
+            <input checked type="checkbox" id="all" name="all" value="All">
+            <label for="assassin">All</label><br>
+            <input type="checkbox" id="assassin" name="assassin" value="Assassin">
+            <label for="assassin">Assassin</label><br>
+            <input type="checkbox" id="fighter" name="fighter" value="Fighter">
+            <label for="fighter">Fighter</label><br>
+            <input type="checkbox" id="mage" name="mage" value="Mage">
+            <label for="mage">Mage</label><br>
+            <input type="checkbox" id="marksman" name="marksman" value="Marksman">
+            <label for="marksman">Marksman</label><br>
+            <input type="checkbox" id="support" name="support" value="Support">
+            <label for="support">Support</label><br>
+            <input type="checkbox" id="tank" name="tank" value="Tank">
+            <label for="tank">Tank</label><br>
+        </div>
+    </section>
+
+    <section id="champ-gallery">
+    </section>
+    <section id="champ-preview">
+        <div id="champ-detail">
+            <h2></h2>
+            <h3></h3>
+            <p></p>
+        </div>
+        <div id="champ-stats">
+
+            <span id="attack"></span>
+            <br>
+            <span id="defense"></span>
+            <br>
+            <span id="magic"></span>
+            <br>
+            <span id="difficulty"></span>
+
+            <div class="rating">
+                <input type="radio" name="rating" id="rata10"><label for="rata10">10</label>
+                <input type="radio" name="rating" id="rata9"><label for="rata9">9</label>
+                <input type="radio" name="rating" id="rata8"><label for="rata8">8</label>
+                <input type="radio" name="rating" id="rata7"><label for="rata7">7</label>
+                <input type="radio" name="rating" id="rata6"><label for="rata6">6</label>
+                <input type="radio" name="rating" id="rata5"><label for="rata5">5</label>
+                <input type="radio" name="rating" id="rata4"><label for="rata4">4</label>
+                <input type="radio" name="rating" id="rata3"><label for="rata3">3</label>
+                <input type="radio" name="rating" id="rata2"><label for="rata2">2</label>
+                <input type="radio" name="rating" id="rata1"><label for="rata1">1</label>
+            </div>
+        </div>
+
+    </section>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
